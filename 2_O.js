@@ -35,11 +35,9 @@ animalSound(animals); // Output 'meow', 'roar' and 'squeak'
 // Good Example
 
 class GoodAnimal {
-  constructor(name) {
-    this.name = name;
+  makeSound() {
+    throw Error("makeSound method should be implemented");
   }
-
-  makeSound() {}
 }
 
 class Squirrel extends GoodAnimal {
@@ -59,8 +57,8 @@ const countAnimalLegs = (animals) => {
   }
 };
 
-const squirrel = new Squirrel("Squirrel");
-const spider = new Spider("Spider");
+const squirrel = new Squirrel();
+const spider = new Spider();
 
 const animalsArray = [squirrel, spider];
 
